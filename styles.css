@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f9fb;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 30px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.01);
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 600;
+    color: #4CAF50;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+}
+
+.kandidat {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 45%;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.kandidat-img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.vote-btn {
+    background-color: #ffffff;
+    color: #4CAF50;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.vote-btn:hover {
+    background-color: #ffffff;
+    color: #333;
+}
+
+#hasil {
+    margin-top: 30px;
+}
+
+#hasil p {
+    font-size: 18px;
+    color: #555;
+}
+
+.result-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.result-btn:hover {
+    background-color: #45a049;
+}
+
+@media screen and (max-width: 768px) {
+    .kandidat {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
